@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="module/login/login.css">
+
+<div class="bg-lg">
+    <div class="login-bg">
+        <div class="login-box">
+            <p id="error" ng-show="login.error"><img src="img/login-3.png" alt="错误"><span  id="errorMsg">用户名密码错误！</span></p>
+
+            <div class="name-warpper">
+                <img class="img-left" src="img/user.png" alt="用户名">
+                <input type="text" id="user" ng-model="login.name" placeholder="账号" autocomplete="off">
+                <img id="nameDel" class="img-right" src="img/top-nav-close.png"/>
+            </div>
+
+            <div class="pwd-wrapper">
+                <img class="img-left" src="img/pwd.png" alt="密码">
+                <input type="password" id="pwd" ng-model="login.password" placeholder="密码" autocomplete="off">
+                <img id="pwdDel" class="img-right" src="img/top-nav-close.png"/>
+            </div>
+            <button type="button" ng-click="login.submit()">登录</button>
+        </div>
+    </div>
+</div>
